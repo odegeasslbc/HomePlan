@@ -13,6 +13,12 @@
 		62AAD6611B0EECC600FCF665 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 62AAD6601B0EECC600FCF665 /* Images.xcassets */; };
 		62AAD6641B0EECC600FCF665 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 62AAD6621B0EECC600FCF665 /* LaunchScreen.xib */; };
 		62AAD6701B0EECC600FCF665 /* HomePlanTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AAD66F1B0EECC600FCF665 /* HomePlanTests.swift */; };
+		62AAD67A1B0EED0100FCF665 /* SCLAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AAD6791B0EED0100FCF665 /* SCLAlertView.swift */; };
+		62AAD67C1B0EED1400FCF665 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AAD67B1B0EED1400FCF665 /* DataModel.swift */; };
+		62AAD67E1B0EED3300FCF665 /* FurnitureInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AAD67D1B0EED3300FCF665 /* FurnitureInfo.swift */; };
+		62AAD6801B0EED3900FCF665 /* FurnitureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AAD67F1B0EED3900FCF665 /* FurnitureView.swift */; };
+		62AAD6821B0EED4500FCF665 /* SavedFurnitureViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AAD6811B0EED4500FCF665 /* SavedFurnitureViewControllerDelegate.swift */; };
+		62AAD6841B0EEEA300FCF665 /* SavedFutnitureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AAD6831B0EEEA300FCF665 /* SavedFutnitureViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +42,12 @@
 		62AAD6691B0EECC600FCF665 /* HomePlanTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HomePlanTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		62AAD66E1B0EECC600FCF665 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		62AAD66F1B0EECC600FCF665 /* HomePlanTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePlanTests.swift; sourceTree = "<group>"; };
+		62AAD6791B0EED0100FCF665 /* SCLAlertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCLAlertView.swift; sourceTree = "<group>"; };
+		62AAD67B1B0EED1400FCF665 /* DataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
+		62AAD67D1B0EED3300FCF665 /* FurnitureInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FurnitureInfo.swift; sourceTree = "<group>"; };
+		62AAD67F1B0EED3900FCF665 /* FurnitureView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FurnitureView.swift; sourceTree = "<group>"; };
+		62AAD6811B0EED4500FCF665 /* SavedFurnitureViewControllerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SavedFurnitureViewControllerDelegate.swift; sourceTree = "<group>"; };
+		62AAD6831B0EEEA300FCF665 /* SavedFutnitureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SavedFutnitureViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,11 +89,17 @@
 		62AAD6561B0EECC600FCF665 /* HomePlan */ = {
 			isa = PBXGroup;
 			children = (
+				62AAD6791B0EED0100FCF665 /* SCLAlertView.swift */,
 				62AAD6591B0EECC600FCF665 /* AppDelegate.swift */,
+				62AAD67F1B0EED3900FCF665 /* FurnitureView.swift */,
 				62AAD65B1B0EECC600FCF665 /* ViewController.swift */,
+				62AAD6831B0EEEA300FCF665 /* SavedFutnitureViewController.swift */,
 				62AAD65D1B0EECC600FCF665 /* Main.storyboard */,
 				62AAD6601B0EECC600FCF665 /* Images.xcassets */,
 				62AAD6621B0EECC600FCF665 /* LaunchScreen.xib */,
+				62AAD6811B0EED4500FCF665 /* SavedFurnitureViewControllerDelegate.swift */,
+				62AAD67B1B0EED1400FCF665 /* DataModel.swift */,
+				62AAD67D1B0EED3300FCF665 /* FurnitureInfo.swift */,
 				62AAD6571B0EECC600FCF665 /* Supporting Files */,
 			);
 			path = HomePlan;
@@ -213,7 +231,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				62AAD65C1B0EECC600FCF665 /* ViewController.swift in Sources */,
+				62AAD6841B0EEEA300FCF665 /* SavedFutnitureViewController.swift in Sources */,
+				62AAD6801B0EED3900FCF665 /* FurnitureView.swift in Sources */,
+				62AAD67C1B0EED1400FCF665 /* DataModel.swift in Sources */,
+				62AAD67A1B0EED0100FCF665 /* SCLAlertView.swift in Sources */,
 				62AAD65A1B0EECC600FCF665 /* AppDelegate.swift in Sources */,
+				62AAD6821B0EED4500FCF665 /* SavedFurnitureViewControllerDelegate.swift in Sources */,
+				62AAD67E1B0EED3300FCF665 /* FurnitureInfo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -343,6 +367,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = HomePlan/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -353,6 +378,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = HomePlan/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

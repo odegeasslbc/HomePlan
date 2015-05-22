@@ -1,25 +1,122 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E17e" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="HomePlan" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                        <viewControllerLayoutGuide type="top" id="4Oy-ha-W1R"/>
+                        <viewControllerLayoutGuide type="bottom" id="RHG-Ye-69L"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" id="IXT-du-WeB">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" alpha="0.94999998807907104" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bhb-WJ-opy">
+                                <rect key="frame" x="474" y="509" width="110" height="34"/>
+                                <color key="backgroundColor" red="1" green="0.057765478850000003" blue="0.048494156230000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="110" id="U04-at-JAq"/>
+                                    <constraint firstAttribute="height" constant="34" id="woe-Ex-2L3"/>
+                                </constraints>
+                                <state key="normal" title="添加新家具">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="addNewFurniture:" destination="BYZ-38-t0r" eventType="touchUpInside" id="e3z-S6-QVL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JcX-OI-czs">
+                                <rect key="frame" x="339" y="509" width="110" height="34"/>
+                                <color key="backgroundColor" red="1" green="0.057765478850000003" blue="0.048494156230000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="110" id="eul-dH-2NN"/>
+                                </constraints>
+                                <state key="normal" title="设置房间大小">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="setRoomSize:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1Nd-mW-L5O"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NLk-lw-soL">
+                                <rect key="frame" x="204" y="509" width="110" height="34"/>
+                                <color key="backgroundColor" red="1" green="0.057765478850000003" blue="0.048494156230000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="110" id="IMb-To-CdP"/>
+                                    <constraint firstAttribute="height" constant="34" id="M19-fK-fta"/>
+                                </constraints>
+                                <state key="normal" title="已保存家具">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="showSavedFurniture:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TFE-38-9ji"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Bhb-WJ-opy" firstAttribute="trailing" secondItem="IXT-du-WeB" secondAttribute="trailingMargin" priority="250" id="Bt7-XL-NoQ"/>
+                            <constraint firstItem="JcX-OI-czs" firstAttribute="leading" secondItem="NLk-lw-soL" secondAttribute="trailing" constant="25" id="Il0-JW-vyS"/>
+                            <constraint firstItem="JcX-OI-czs" firstAttribute="firstBaseline" secondItem="Bhb-WJ-opy" secondAttribute="baseline" id="UAo-kL-foR"/>
+                            <constraint firstItem="JcX-OI-czs" firstAttribute="baseline" secondItem="Bhb-WJ-opy" secondAttribute="firstBaseline" id="VsY-O6-Nqx"/>
+                            <constraint firstItem="NLk-lw-soL" firstAttribute="top" secondItem="JcX-OI-czs" secondAttribute="top" id="XDJ-An-Geu"/>
+                            <constraint firstItem="RHG-Ye-69L" firstAttribute="top" secondItem="NLk-lw-soL" secondAttribute="bottom" constant="8" symbolic="YES" id="Z1M-tA-zhe"/>
+                            <constraint firstItem="Bhb-WJ-opy" firstAttribute="leading" secondItem="JcX-OI-czs" secondAttribute="trailing" constant="25" id="bOD-Tu-ePh"/>
+                            <constraint firstItem="JcX-OI-czs" firstAttribute="top" secondItem="Bhb-WJ-opy" secondAttribute="top" id="blU-vl-NCT"/>
+                            <constraint firstItem="NLk-lw-soL" firstAttribute="baseline" secondItem="JcX-OI-czs" secondAttribute="baseline" id="odv-qo-6Gn"/>
+                            <constraint firstAttribute="trailing" secondItem="Bhb-WJ-opy" secondAttribute="trailing" constant="16" id="unP-15-Umt"/>
+                            <constraint firstItem="NLk-lw-soL" firstAttribute="firstBaseline" secondItem="JcX-OI-czs" secondAttribute="baseline" id="xWX-wd-aH0"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Z1M-tA-zhe"/>
+                                <exclude reference="Bt7-XL-NoQ"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="Z1M-tA-zhe"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <connections>
+                        <outlet property="addFurnitureButton" destination="Bhb-WJ-opy" id="AZE-Gu-AzI"/>
+                        <outlet property="savedFurButton" destination="NLk-lw-soL" id="83Z-in-ZGg"/>
+                        <outlet property="setRoomButton" destination="JcX-OI-czs" id="xUO-up-Kba"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="338" y="369"/>
+        </scene>
+        <!--Saved Furniture View Controller-->
+        <scene sceneID="HR2-Us-Afz">
+            <objects>
+                <viewController storyboardIdentifier="SavedFurnitureView" id="UTN-nb-kQQ" customClass="SavedFurnitureViewController" customModule=" " sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4WK-nE-PCu"/>
+                        <viewControllerLayoutGuide type="bottom" id="77N-2i-FoO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="v11-UF-BKr">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pFK-Md-nro" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="337.5" y="1037"/>
         </scene>
     </scenes>
 </document>
