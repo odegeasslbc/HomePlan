@@ -19,7 +19,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" alpha="0.94999998807907104" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bhb-WJ-opy">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="black_background_wood-wallpaper-1920x1440.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="AqZ-nj-5XW">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                            </imageView>
+                            <button opaque="NO" alpha="0.80000000000000004" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bhb-WJ-opy">
                                 <rect key="frame" x="474" y="509" width="110" height="34"/>
                                 <color key="backgroundColor" red="1" green="0.057765478850000003" blue="0.048494156230000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -34,7 +37,7 @@
                                     <action selector="addNewFurniture:" destination="BYZ-38-t0r" eventType="touchUpInside" id="e3z-S6-QVL"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JcX-OI-czs">
+                            <button opaque="NO" alpha="0.80000000000000004" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JcX-OI-czs">
                                 <rect key="frame" x="339" y="509" width="110" height="34"/>
                                 <color key="backgroundColor" red="1" green="0.057765478850000003" blue="0.048494156230000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -48,7 +51,7 @@
                                     <action selector="setRoomSize:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1Nd-mW-L5O"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NLk-lw-soL">
+                            <button opaque="NO" alpha="0.79999999999999982" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NLk-lw-soL">
                                 <rect key="frame" x="204" y="509" width="110" height="34"/>
                                 <color key="backgroundColor" red="1" green="0.057765478850000003" blue="0.048494156230000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -66,26 +69,44 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="trailing" secondItem="AqZ-nj-5XW" secondAttribute="trailing" id="9Bc-At-ZxF"/>
                             <constraint firstItem="Bhb-WJ-opy" firstAttribute="trailing" secondItem="IXT-du-WeB" secondAttribute="trailingMargin" priority="250" id="Bt7-XL-NoQ"/>
                             <constraint firstItem="JcX-OI-czs" firstAttribute="leading" secondItem="NLk-lw-soL" secondAttribute="trailing" constant="25" id="Il0-JW-vyS"/>
+                            <constraint firstItem="AqZ-nj-5XW" firstAttribute="top" secondItem="IXT-du-WeB" secondAttribute="top" id="SK7-u1-on8"/>
                             <constraint firstItem="JcX-OI-czs" firstAttribute="firstBaseline" secondItem="Bhb-WJ-opy" secondAttribute="baseline" id="UAo-kL-foR"/>
                             <constraint firstItem="JcX-OI-czs" firstAttribute="baseline" secondItem="Bhb-WJ-opy" secondAttribute="firstBaseline" id="VsY-O6-Nqx"/>
                             <constraint firstItem="NLk-lw-soL" firstAttribute="top" secondItem="JcX-OI-czs" secondAttribute="top" id="XDJ-An-Geu"/>
+                            <constraint firstAttribute="bottom" secondItem="AqZ-nj-5XW" secondAttribute="bottom" id="XH1-eM-9nX"/>
                             <constraint firstItem="RHG-Ye-69L" firstAttribute="top" secondItem="NLk-lw-soL" secondAttribute="bottom" constant="8" symbolic="YES" id="Z1M-tA-zhe"/>
                             <constraint firstItem="Bhb-WJ-opy" firstAttribute="leading" secondItem="JcX-OI-czs" secondAttribute="trailing" constant="25" id="bOD-Tu-ePh"/>
                             <constraint firstItem="JcX-OI-czs" firstAttribute="top" secondItem="Bhb-WJ-opy" secondAttribute="top" id="blU-vl-NCT"/>
+                            <constraint firstItem="AqZ-nj-5XW" firstAttribute="leading" secondItem="IXT-du-WeB" secondAttribute="leading" id="je3-AV-v4W"/>
                             <constraint firstItem="NLk-lw-soL" firstAttribute="baseline" secondItem="JcX-OI-czs" secondAttribute="baseline" id="odv-qo-6Gn"/>
                             <constraint firstAttribute="trailing" secondItem="Bhb-WJ-opy" secondAttribute="trailing" constant="16" id="unP-15-Umt"/>
                             <constraint firstItem="NLk-lw-soL" firstAttribute="firstBaseline" secondItem="JcX-OI-czs" secondAttribute="baseline" id="xWX-wd-aH0"/>
                         </constraints>
                         <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="AqZ-nj-5XW"/>
+                            </mask>
                             <mask key="constraints">
+                                <exclude reference="9Bc-At-ZxF"/>
+                                <exclude reference="SK7-u1-on8"/>
+                                <exclude reference="XH1-eM-9nX"/>
+                                <exclude reference="je3-AV-v4W"/>
                                 <exclude reference="Z1M-tA-zhe"/>
                                 <exclude reference="Bt7-XL-NoQ"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="AqZ-nj-5XW"/>
+                            </mask>
                             <mask key="constraints">
+                                <include reference="9Bc-At-ZxF"/>
+                                <include reference="SK7-u1-on8"/>
+                                <include reference="XH1-eM-9nX"/>
+                                <include reference="je3-AV-v4W"/>
                                 <include reference="Z1M-tA-zhe"/>
                             </mask>
                         </variation>
@@ -98,7 +119,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="338" y="369"/>
+            <point key="canvasLocation" x="337.5" y="369"/>
         </scene>
         <!--Saved Furniture View Controller-->
         <scene sceneID="HR2-Us-Afz">
@@ -119,4 +140,7 @@
             <point key="canvasLocation" x="337.5" y="1037"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="black_background_wood-wallpaper-1920x1440.jpg" width="1080" height="1920"/>
+    </resources>
 </document>

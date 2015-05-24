@@ -68,14 +68,9 @@ class SavedFutnitureViewController: UIViewController {
                 newFurnitureView.layer.cornerRadius = 5.0
                 newFurnitureView.status = 1
                 newFurnitureView.addGestureRecognizer(longpressRec)
-                
+                newFurnitureView.center = self.view.center
                 furnitureViewList.append(newFurnitureView)
                 self.view.addSubview(newFurnitureView)
-                /*
-                UIView.animateWithDuration(2, animations: {
-                self.roomView.frame = CGRectMake(25, 50, roomWidth, roomHeight)
-                self.roomView.backgroundColor = UIColor(red: 1,green: CGFloat(arc4random_uniform(100))/100,blue: CGFloat(arc4random_uniform(100))/100,alpha:1.0)
-                })*/
             }
         }else{
             let label = UILabel(frame: CGRectMake(self.view.frame.width/4, 200, self.view.frame.width/2, 150))
@@ -100,7 +95,33 @@ class SavedFutnitureViewController: UIViewController {
         self.view.addGestureRecognizer(swipeDownRec)
         
         createFurnitureList()
+        
+        
+        
         // Do any additional setup after loading the view, typically from a nib.
+    }
+    
+    //furniture 自动散开
+    override func viewDidAppear(animated: Bool) {
+        UIView.animateWithDuration(0.5, delay: 0, options: UIViewAnimationOptions.CurveLinear,animations: {
+            for(var i = 0; i < self.furnitureViewList.count ; i++){
+                let dividedNbr = self.furnitureViewList.count
+                let dividedHeight = (self.view.frame.height / CGFloat(dividedNbr)) - CGFloat(20)
+                let leftOrRight = i%2
+                if (leftOrRight == 1){
+                    if(self.furnitureViewList[i].frame.width < 100){
+                        var tmpFrame = CGRectMake(CGFloat(Int(arc4random_uniform(130))+207), CGFloat(i)*dividedHeight + 50, self.furnitureViewList[i].frame.width , self.furnitureViewList[i].frame.height )
+                        self.furnitureViewList[i].frame = tmpFrame
+                    }else{
+                        var tmpFrame = CGRectMake(CGFloat(Int(arc4random_uniform(30))+207), CGFloat(i)*dividedHeight + 50, self.furnitureViewList[i].frame.width , self.furnitureViewList[i].frame.height )
+                        self.furnitureViewList[i].frame = tmpFrame
+                    }
+                }else{
+                    var tmpFrame = CGRectMake(CGFloat(Int(arc4random_uniform(130))+10), CGFloat(i)*dividedHeight + 50, self.furnitureViewList[i].frame.width , self.furnitureViewList[i].frame.height )
+                    self.furnitureViewList[i].frame = tmpFrame
+                }
+            }
+            }, completion:{finished in println("width:\(self.view.frame.width), height:\(self.view.frame.height)")})
     }
     
     override func didReceiveMemoryWarning() {

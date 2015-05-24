@@ -54,7 +54,7 @@ class FurnitureView: UIView{
     
     func tappedView(sender:UITapGestureRecognizer){
         var currentTrans = sender.view?.transform
-        var newTrans = CGAffineTransformRotate(currentTrans!, CGFloat(M_PI_2))
+        var newTrans = CGAffineTransformRotate(currentTrans!, CGFloat(M_PI_2/3))
         sender.view?.transform = newTrans
     }
     
@@ -117,6 +117,7 @@ class FurnitureView: UIView{
         nameLabel.text = self.name
         nameLabel.textAlignment = NSTextAlignment.Center
         nameLabel.textColor = UIColor.whiteColor()
+        nameLabel.sizeToFit()
         self.addSubview(nameLabel)
     }
     

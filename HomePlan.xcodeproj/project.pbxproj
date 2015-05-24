@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6293CE321B1129CF00D7D378 /* background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6293CE311B1129CF00D7D378 /* background.jpg */; };
+		6293CE361B112CD300D7D378 /* black_background_wood-wallpaper-1920x1440.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6293CE351B112CD300D7D378 /* black_background_wood-wallpaper-1920x1440.jpg */; };
 		62AAD65A1B0EECC600FCF665 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AAD6591B0EECC600FCF665 /* AppDelegate.swift */; };
 		62AAD65C1B0EECC600FCF665 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AAD65B1B0EECC600FCF665 /* ViewController.swift */; };
 		62AAD65F1B0EECC600FCF665 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62AAD65D1B0EECC600FCF665 /* Main.storyboard */; };
@@ -32,6 +34,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6293CE311B1129CF00D7D378 /* background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = background.jpg; sourceTree = "<group>"; };
+		6293CE351B112CD300D7D378 /* black_background_wood-wallpaper-1920x1440.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "black_background_wood-wallpaper-1920x1440.jpg"; sourceTree = "<group>"; };
 		62AAD6541B0EECC600FCF665 /* HomePlan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HomePlan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		62AAD6581B0EECC600FCF665 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		62AAD6591B0EECC600FCF665 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -95,6 +99,8 @@
 				62AAD65B1B0EECC600FCF665 /* ViewController.swift */,
 				62AAD6831B0EEEA300FCF665 /* SavedFutnitureViewController.swift */,
 				62AAD65D1B0EECC600FCF665 /* Main.storyboard */,
+				6293CE351B112CD300D7D378 /* black_background_wood-wallpaper-1920x1440.jpg */,
+				6293CE311B1129CF00D7D378 /* background.jpg */,
 				62AAD6601B0EECC600FCF665 /* Images.xcassets */,
 				62AAD6621B0EECC600FCF665 /* LaunchScreen.xib */,
 				62AAD6811B0EED4500FCF665 /* SavedFurnitureViewControllerDelegate.swift */,
@@ -211,6 +217,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				62AAD65F1B0EECC600FCF665 /* Main.storyboard in Resources */,
+				6293CE361B112CD300D7D378 /* black_background_wood-wallpaper-1920x1440.jpg in Resources */,
+				6293CE321B1129CF00D7D378 /* background.jpg in Resources */,
 				62AAD6641B0EECC600FCF665 /* LaunchScreen.xib in Resources */,
 				62AAD6611B0EECC600FCF665 /* Images.xcassets in Resources */,
 			);
@@ -437,6 +445,7 @@
 				62AAD6751B0EECC600FCF665 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		62AAD6761B0EECC600FCF665 /* Build configuration list for PBXNativeTarget "HomePlanTests" */ = {
 			isa = XCConfigurationList;
@@ -445,6 +454,7 @@
 				62AAD6781B0EECC600FCF665 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
